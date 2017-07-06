@@ -188,23 +188,27 @@ namespace LoopPractice
             //}
             //while (additionalGrade.ToUpper() == "YES");
 
-            ////practice
-            //Console.WriteLine("How many classes did you take?");
-            //string[] classes = new string[int.Parse(Console.ReadLine())];
-            //int[] grades = new int[int.Parse(Console.ReadLine())];
-            //Console.WriteLine("Please enter your class names and respective grades as prompted.");
-            //string answer;
-            //do
-            //{
-            //    for (int i = 0; i < classes.Length; i++)
-            //    {
-            //        Console.WriteLine("Enter a class");
-            //        classes[i] = Console.ReadLine();
-            //    }
-            //    Console.WriteLine("Would you like to enter another class?");
-            //    answer = Console.ReadLine().ToLower();
-            //}
-            //while (answer == "yes");
+            //practice
+            Console.WriteLine("How many classes did you take?");
+            int number = int.Parse(Console.ReadLine());
+            string[] classes = new string[number];
+            string[] grades = new string[number];
+            Console.WriteLine("Please enter your class names and respective grades as prompted.");
+            string answer;
+
+            for (int i = 0; i < classes.Length; i++)
+            {
+                Console.WriteLine("Enter a class");
+                classes[i] = Console.ReadLine();
+                Console.WriteLine("What was your grade in that class?");
+                grades[i] = (Console.ReadLine());
+            }
+            for(int i = 0; i < classes.Length; i++)
+            {
+                Console.WriteLine(classes[i] + ": " + grades[i]);
+            }
+                
+           
 
             ////Nested loops
             ////Loop inside of another loop
@@ -242,16 +246,16 @@ namespace LoopPractice
             //    Console.WriteLine();
             //}
 
-            Console.WriteLine("How many rows do you want in your triangle?");
-            int n = int.Parse(Console.ReadLine());
-            for (int row = 1; row <= n; row++)
-            {
-                for (int col = 1; col <= row; col++)
-                {
-                    Console.Write(col + " ");
-                }
-                Console.WriteLine();
-            }
+            //Console.WriteLine("How many rows do you want in your triangle?");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int row = 1; row <= n; row++)
+            //{
+            //    for (int col = 1; col <= row; col++)
+            //    {
+            //        Console.Write(col + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
