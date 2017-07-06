@@ -128,7 +128,17 @@ namespace LoopPractice
             //    Console.WriteLine(name);
             //}
 
+            //While loop is used when you want a chunk of code to run only if a condition is met first
+            //While something is TRUE
+            //Rely on bools
 
+            Console.WriteLine("Enter first name");
+            string firstName = Console.ReadLine();
+            while(firstName.ToUpper() == "DANIEL")
+            {
+                Console.WriteLine("Dude, you are amazing.");
+                break; //if you don't add break, you will get infinite loop if you enter "daniel"
+            }
 
         }
     }
