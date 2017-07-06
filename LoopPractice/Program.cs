@@ -19,10 +19,23 @@ namespace LoopPractice
             //For Loop
             //can be used for both counting and iterating through an array (or other collection type)
             //Looks like this:
-            //for(initializer); condition; updater)
+            //for(initializer; condition; updater)
             //{
             //      do something
             //}
+
+            //for(int i = 15; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //for(int i = 50; i <= 100; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+
         }
     }
 }
