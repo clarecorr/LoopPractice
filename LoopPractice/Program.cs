@@ -65,6 +65,14 @@ namespace LoopPractice
             //    Console.WriteLine(storyWords[i]);
             //}
 
+            //Without .Reverse
+            //string story = "Once upon a time";
+            //string[] storyWords = story.Split();
+            //for(int i = (storyWords.Length -1); i >= 0; i--)
+            //{
+            //    Console.WriteLine(storyWords[i]);
+            //}
+
             //Add the product of 1 through 10 using a For Loop 
             //Print the product to the screen
 
@@ -188,27 +196,27 @@ namespace LoopPractice
             //}
             //while (additionalGrade.ToUpper() == "YES");
 
-            //practice
-            Console.WriteLine("How many classes did you take?");
-            int number = int.Parse(Console.ReadLine());
-            string[] classes = new string[number];
-            string[] grades = new string[number];
-            Console.WriteLine("Please enter your class names and respective grades as prompted.");
-            string answer;
+            ////practice
+            //Console.WriteLine("How many classes did you take?");
+            //int number = int.Parse(Console.ReadLine());
+            //string[] classes = new string[number];
+            //string[] grades = new string[number];
+            //Console.WriteLine("Please enter your class names and respective grades as prompted.");
+            //string answer;
 
-            for (int i = 0; i < classes.Length; i++)
-            {
-                Console.WriteLine("Enter a class");
-                classes[i] = Console.ReadLine();
-                Console.WriteLine("What was your grade in that class?");
-                grades[i] = (Console.ReadLine());
-            }
-            for(int i = 0; i < classes.Length; i++)
-            {
-                Console.WriteLine(classes[i] + ": " + grades[i]);
-            }
-                
-           
+            //for (int i = 0; i < classes.Length; i++)
+            //{
+            //    Console.WriteLine("Enter a class");
+            //    classes[i] = Console.ReadLine();
+            //    Console.WriteLine("What was your grade in that class?");
+            //    grades[i] = (Console.ReadLine());
+            //}
+            //for(int i = 0; i < classes.Length; i++)
+            //{
+            //    Console.WriteLine(classes[i] + ": " + grades[i]);
+            //}
+
+
 
             ////Nested loops
             ////Loop inside of another loop
@@ -257,9 +265,51 @@ namespace LoopPractice
             //    Console.WriteLine();
             //}
 
+            //write a console application that prints hello world to the console 10 times
 
+            //for(int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine("hello world");
+            //}
 
+            //create a string variable and print all the elements of that string to the console
 
+            //string greeting = "Hello. How are you?";
+            //for(int i = 0; i < greeting.Length; i++)
+            //{
+            //    Console.WriteLine(greeting[i]);
+            //}
+            ////or
+            //foreach(char word in greeting)
+            //{
+            //    Console.WriteLine(word);
+            //}
+
+            //write a console application that asks the user for word, print the number of vowels in that word to the console
+
+            //Console.WriteLine("Please enter a word");
+            //string word = Console.ReadLine();
+            //int vowelCount = 0;
+            //foreach(char letter in word)
+            //{
+            //    if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+            //    {
+            //        vowelCount += 1;
+            //    }
+            //}
+            //Console.WriteLine(vowelCount);
+
+            //write a program which asks the user for a number and how many times that number should be repeated
+
+            Console.WriteLine("Enter a number");
+            string number = Console.ReadLine();
+            Console.WriteLine("How many times should the number be repeated");
+            int repeatTimes = int.Parse(Console.ReadLine());
+
+            for(int i = 1; i <= repeatTimes; i++)
+            {
+                Console.WriteLine(number);
+            }
 
         }
     }
