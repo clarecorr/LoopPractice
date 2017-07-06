@@ -172,22 +172,88 @@ namespace LoopPractice
             //}
             //while (playAgain == "YES");
 
-            //Ask the user for the class that they would like to add to their gpa calculation
-            //Ask the user the lettergrade for the class (no + or -)
-            //Ask the user if they have another class they would like to add to their gpa calculation
-            //Using a do-while loop repeat the code if the user says "YES"
+            ////Ask the user for the class that they would like to add to their gpa calculation
+            ////Ask the user the lettergrade for the class (no + or -)
+            ////Ask the user if they have another class they would like to add to their gpa calculation
+            ////Using a do-while loop repeat the code if the user says "YES"
 
-            string additionalGrade;
-            do
+            //string additionalGrade;
+            //do
+            //{
+            //    Console.WriteLine("What class would you like to add to your GPA calculation?");
+            //    Console.WriteLine("What is your lettergrade for {0}?", Console.ReadLine());
+            //    Console.ReadLine();
+            //    Console.WriteLine("Would you like to add another class to your gpa calculation? YES/NO");
+            //    additionalGrade = Console.ReadLine();
+            //}
+            //while (additionalGrade.ToUpper() == "YES");
+
+            ////practice
+            //Console.WriteLine("How many classes did you take?");
+            //string[] classes = new string[int.Parse(Console.ReadLine())];
+            //int[] grades = new int[int.Parse(Console.ReadLine())];
+            //Console.WriteLine("Please enter your class names and respective grades as prompted.");
+            //string answer;
+            //do
+            //{
+            //    for (int i = 0; i < classes.Length; i++)
+            //    {
+            //        Console.WriteLine("Enter a class");
+            //        classes[i] = Console.ReadLine();
+            //    }
+            //    Console.WriteLine("Would you like to enter another class?");
+            //    answer = Console.ReadLine().ToLower();
+            //}
+            //while (answer == "yes");
+
+            ////Nested loops
+            ////Loop inside of another loop
+            ////The inner loop is executed more times than the outer loop
+            ////Real life example - Clock
+
+            ////Create a nested loop structure that prints:
+            ////1234
+            ////1234
+
+            //for(int rows = 1; rows <= 2; rows++)
+            //{
+            //    for (int columns = 1; columns <= 4; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Print a Triangle
+            //Outer loop will go line by line
+            //Inner loop will go over different elements in the line
+            //Result:
+            //1
+            //1 2
+            //1 2 3
+            //1 2 3 4
+
+            //for(int rows = 1; rows <= 4; rows++)
+            //{
+            //    for(int columns = 1; columns <= rows; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            Console.WriteLine("How many rows do you want in your triangle?");
+            int n = int.Parse(Console.ReadLine());
+            for (int row = 1; row <= n; row++)
             {
-                Console.WriteLine("What class would you like to add to your GPA calculation?");
-                Console.WriteLine("What is your lettergrade for {0}?", Console.ReadLine());
-                Console.ReadLine();
-                Console.WriteLine("Would you like to add another class to your gpa calculation? YES/NO");
-                additionalGrade = Console.ReadLine();
+                for (int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
             }
-            while (additionalGrade.ToUpper() == "YES");
-            
+
+
 
 
 
