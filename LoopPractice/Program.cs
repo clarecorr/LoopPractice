@@ -48,22 +48,22 @@ namespace LoopPractice
             //Create an array called days with the elements Monday, Tuesday, and Wednesday
             //Using a For Loop, print the elements of the days array
 
-            string[] days = { "Monday", "Tuesday", "Wednesday" };
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine(days[i]);
-            }
+            //string[] days = { "Monday", "Tuesday", "Wednesday" };
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine(days[i]);
+            //}
 
             //Start with the string "Once upon a time" and create an array called storyWords using the Split methond. 
             //Reverse the order of the elements in the array and using a for loop, print each word
 
-            string story = "Once upon a time";
-            string[] storyWords = story.Split();
-            Array.Reverse(storyWords);
-            for (int i = 0; i < storyWords.Length; i++)
-            {
-                Console.WriteLine(storyWords[i]);
-            }
+            //string story = "Once upon a time";
+            //string[] storyWords = story.Split();
+            //Array.Reverse(storyWords);
+            //for (int i = 0; i < storyWords.Length; i++)
+            //{
+            //    Console.WriteLine(storyWords[i]);
+            //}
 
             //Add the product of 1 through 10 using a For Loop 
             //Print the product to the screen
@@ -77,12 +77,12 @@ namespace LoopPractice
             //}
             //Console.WriteLine(product);
 
-            int product = 1;
-            for(int i = 1; i <= 10; i++)
-            {
-                product = product * i;
-            }
-            Console.WriteLine(product);
+            //int product = 1;
+            //for(int i = 1; i <= 10; i++)
+            //{
+            //    product = product * i;
+            //}
+            //Console.WriteLine(product);
 
 
 
@@ -94,6 +94,40 @@ namespace LoopPractice
             //        Console.WriteLine(product);
             //    }
             //}
+
+            ////*For each loop
+            ////used to itierate over a collection (ex. list or array)
+            ////you can think of the structure of a foreach loop as the statement
+            ////For each item in the collection, do something
+
+            ////ex
+            //int[] studentGrades = { 4, 4, 3, 4, 3 };
+            //foreach(int grade in studentGrades)
+            //{
+            //    Console.WriteLine(grade);
+            //}
+
+            //string[] firstMonths = { "Jan", "Feb", "Mar", "April", "May", "June" };
+            ////always start with keyword foreach
+            //foreach (string month in firstMonths)
+            //{
+            //    Console.WriteLine(month);
+            //}
+            ////foreach loops allow the temporary variable to "know" to assign itself to each element 
+            ////in the collection(like an array), one at a time
+
+            ////Foreach loop willl always go from beginning to end, no matter what it counts the number of 
+            ////elements in the collection, and runs that number of times
+
+            ////Create an array of 6 musicians (bands or solo artists)
+            ////Using a foreach loop, print each musician's name
+
+            //string[] musicians = { "Adele", "Beyonce", "Kanye", "Cher", "JT", };
+            //foreach(string name in musicians)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
 
 
         }
