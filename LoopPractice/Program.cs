@@ -71,14 +71,15 @@ namespace LoopPractice
             //int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             //int product = numbers[0];
-            //for(int i = 0; i < numbers.Length; i++)
+            //for (int i = 0; i < numbers.Length; i++)
             //{
             //    product = product * numbers[i];
             //}
             //Console.WriteLine(product);
 
+            ////or you can do it without an array
             //int product = 1;
-            //for(int i = 1; i <= 10; i++)
+            //for (int i = 1; i <= 10; i++)
             //{
             //    product = product * i;
             //}
@@ -128,17 +129,67 @@ namespace LoopPractice
             //    Console.WriteLine(name);
             //}
 
-            //While loop is used when you want a chunk of code to run only if a condition is met first
-            //While something is TRUE
-            //Rely on bools
+            ////While loop is used when you want a chunk of code to run only if a condition is met first
+            ////While something is TRUE
+            ////Rely on bools
 
-            Console.WriteLine("Enter first name");
-            string firstName = Console.ReadLine();
-            while(firstName.ToUpper() == "DANIEL")
+            //Console.WriteLine("Enter first name");
+            //string firstName = Console.ReadLine();
+            //while(firstName.ToUpper() == "DANIEL")
+            //{
+            //    Console.WriteLine("Dude, you are amazing.");
+            //    break; //if you don't add break, you will get infinite loop if you enter "daniel"
+            //}
+
+
+            //Console.WriteLine("Do you want to play the game? YES/NO");
+            //string playAgain = Console.ReadLine();
+            //while(playAgain.ToUpper() == "YES")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+
+            ////A Do-While loop is similar to a While loop, however Do-While loop is used when you want a chunk 
+            ////of code to run AT LEAST ONCE but repeat only if the while condition is met
+
+            ////The structure of a do-while loop looks like this:
+            ////do
+            ////{
+            ////      do something
+            ////}
+            ////while(condition);
+
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Welcome to the game!");
+            //    //Pretend the for the game is here
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine().ToUpper();
+            //}
+            //while (playAgain == "YES");
+
+            //Ask the user for the class that they would like to add to their gpa calculation
+            //Ask the user the lettergrade for the class (no + or -)
+            //Ask the user if they have another class they would like to add to their gpa calculation
+            //Using a do-while loop repeat the code if the user says "YES"
+
+            string additionalGrade;
+            do
             {
-                Console.WriteLine("Dude, you are amazing.");
-                break; //if you don't add break, you will get infinite loop if you enter "daniel"
+                Console.WriteLine("What class would you like to add to your GPA calculation?");
+                Console.WriteLine("What is your lettergrade for {0}?", Console.ReadLine());
+                Console.ReadLine();
+                Console.WriteLine("Would you like to add another class to your gpa calculation? YES/NO");
+                additionalGrade = Console.ReadLine();
             }
+            while (additionalGrade.ToUpper() == "YES");
+            
+
+
 
         }
     }
