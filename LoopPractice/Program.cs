@@ -341,21 +341,51 @@ namespace LoopPractice
             //If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.” 
             //Keep asking them for a number (looping) until they win.
 
-            int remainder;
-            do
-            {
-                Console.WriteLine("Enter an integer");
-                int input = int.Parse(Console.ReadLine());
-                remainder = input % 3;
-                if (remainder == 0)
-                {
-                    Console.WriteLine("You Won!");
-                }
-            }
-            while (remainder != 0);
+            //int remainder;
+            //do
+            //{
+            //    Console.WriteLine("Enter an integer");
+            //    int input = int.Parse(Console.ReadLine());
+            //    remainder = input % 3;
+            //    if (remainder == 0)
+            //    {
+            //        Console.WriteLine("You Won!");
+            //    }
+            //}
+            //while (remainder != 0);
 
-        //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
-        //Hint: Research.startsWith()
+            //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
+            //Hint: Research.startsWith()
+
+            //string[] faveMovies = { "Star Wars", "Anchorman", "Avatar", "Serenity", "Super Troopers" };
+            //foreach(string movie in faveMovies)
+            //{
+            //    if(movie.ToLower().StartsWith("a"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("E"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
+            //}
+
 
 
         }
