@@ -370,15 +370,15 @@ namespace LoopPractice
 
             //simpler way
 
-            Console.WriteLine("Enter number");
-            int input = int.Parse(Console.ReadLine());
-            while(input % 3 != 0)
-            {
-                Console.WriteLine("You lost.");
-                Console.WriteLine("Enter another number");
-                input = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("You won!");
+            //Console.WriteLine("Enter number");
+            //int input = int.Parse(Console.ReadLine());
+            //while(input % 3 != 0)
+            //{
+            //    Console.WriteLine("You lost.");
+            //    Console.WriteLine("Enter another number");
+            //    input = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("You won!");
 
 
             //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
@@ -412,6 +412,84 @@ namespace LoopPractice
             //        Console.WriteLine(movie);
             //    }
             //}
+            //could have done switch case
+
+
+            //Write a console application that asks the user for a word or phrase
+            //Print the number of each vowel to the console
+
+            Console.WriteLine("Enter a word or phrase");
+            string phrase = Console.ReadLine();
+            int numberOfAs = 0;
+            int numberOfEs = 0;
+            int numberOfIs = 0;
+            int numberOfOs = 0;
+            int numberOfUs = 0;
+            for (int i = 0; i < phrase.Length; i++)
+            {
+                if (phrase.ToLower()[i] == 'a')
+                {
+                    numberOfAs += 1;
+                }
+                else if (phrase.ToLower()[i] == 'e')
+                {
+                    numberOfEs += 1;
+                }
+                else if (phrase.ToLower()[i] == 'i')
+                {
+                    numberOfIs += 1;
+                }
+                else if (phrase.ToLower()[i] == 'o')
+                {
+                    numberOfOs += 1;
+                }
+                else if (phrase.ToLower()[i] == 'u')
+                {
+                    numberOfUs += 1;
+                }
+            }
+            if (numberOfAs == 1)
+            {
+                Console.WriteLine("Your phrase has {0} A", numberOfAs);
+            }
+            else
+            {
+                Console.WriteLine("Your phrase has {0} A's", numberOfAs);
+            }
+            if (numberOfEs == 1)
+            {
+                Console.WriteLine("Your phrase has {0} E", numberOfEs);
+            }
+            else
+            {
+                Console.WriteLine("Your phrase has {0} E's", numberOfEs);
+            }
+            if (numberOfIs == 1)
+            {
+                Console.WriteLine("Your phrase has {0} I", numberOfIs);
+            }
+            else
+            {
+                Console.WriteLine("Your phrase has {0} I's", numberOfIs);
+            }
+            if (numberOfOs == 1)
+            {
+                Console.WriteLine("Your phrase has {0} O", numberOfOs);
+            }
+            else
+            {
+                Console.WriteLine("Your phrase has {0} O's", numberOfOs);
+            }
+            if (numberOfUs == 1)
+            {
+                Console.WriteLine("Your phrase has {0} U", numberOfUs);
+            }
+            else
+            {
+                Console.WriteLine("Your phrase has {0} U's", numberOfUs);
+            }
+            
+
 
 
 
