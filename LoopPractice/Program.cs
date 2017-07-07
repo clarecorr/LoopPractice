@@ -245,9 +245,9 @@ namespace LoopPractice
             //1 2 3
             //1 2 3 4
 
-            //for(int rows = 1; rows <= 4; rows++)
+            //for (int rows = 1; rows <= 4; rows++)
             //{
-            //    for(int columns = 1; columns <= rows; columns++)
+            //    for (int columns = 1; columns <= rows; columns++)
             //    {
             //        Console.Write(columns);
             //    }
@@ -301,15 +301,62 @@ namespace LoopPractice
 
             //write a program which asks the user for a number and how many times that number should be repeated
 
-            Console.WriteLine("Enter a number");
-            string number = Console.ReadLine();
-            Console.WriteLine("How many times should the number be repeated");
-            int repeatTimes = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a number");
+            //string number = Console.ReadLine();
+            //Console.WriteLine("How many times should the number be repeated");
+            //int repeatTimes = int.Parse(Console.ReadLine());
 
-            for(int i = 1; i <= repeatTimes; i++)
+            //for(int i = 1; i <= repeatTimes; i++)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            //Create an array of lucky numbers and using foreach loop print each
+
+            //int[] luckyNumbers = { 4, 2, 8, 12, 3 };
+            //foreach(int number in luckyNumbers)
+            //{
+            //    Console.WriteLine("Your lucky number is: " + number);
+            //}
+
+            //Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
+
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    int product = 5 * i;
+            //    Console.WriteLine("5 x {0} = {1}", i, product);
+            //}
+
+            //for (int rows = 1; rows <= 5; rows++)
+            //{
+            //    for (int columns = 1; columns <= 5; columns++)
+            //    {
+            //        Console.Write(columns * rows + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            //Write a console application that asks the user for an integer. 
+            //If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.” 
+            //Keep asking them for a number (looping) until they win.
+
+            int remainder;
+            do
             {
-                Console.WriteLine(number);
+                Console.WriteLine("Enter an integer");
+                int input = int.Parse(Console.ReadLine());
+                remainder = input % 3;
+                if (remainder == 0)
+                {
+                    Console.WriteLine("You Won!");
+                }
             }
+            while (remainder != 0);
+
+        //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
+        //Hint: Research.startsWith()
+
 
         }
     }
