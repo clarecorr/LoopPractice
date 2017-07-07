@@ -341,18 +341,45 @@ namespace LoopPractice
             //If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.” 
             //Keep asking them for a number (looping) until they win.
 
+
+
             //int remainder;
-            //do
+            //Console.WriteLine("Enter an integer");
+            //int input = int.Parse(Console.ReadLine());
+            //remainder = input % 3;
+            //if (remainder == 0)
             //{
-            //    Console.WriteLine("Enter an integer");
-            //    int input = int.Parse(Console.ReadLine());
-            //    remainder = input % 3;
-            //    if (remainder == 0)
-            //    {
-            //        Console.WriteLine("You Won!");
-            //    }
+            //    Console.WriteLine("You Won!");
             //}
-            //while (remainder != 0);
+            //else
+            //{
+
+            //    do
+            //    {
+            //        Console.WriteLine("You Lost.");
+            //        Console.WriteLine("Enter an integer");
+            //        input = int.Parse(Console.ReadLine());
+            //        remainder = input % 3;
+            //        if (remainder == 0)
+            //        {
+            //            Console.WriteLine("You Won!");
+            //        }
+            //    }
+            //    while (remainder != 0);
+            //}
+
+            //simpler way
+
+            Console.WriteLine("Enter number");
+            int input = int.Parse(Console.ReadLine());
+            while(input % 3 != 0)
+            {
+                Console.WriteLine("You lost.");
+                Console.WriteLine("Enter another number");
+                input = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("You won!");
+
 
             //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
             //Hint: Research.startsWith()
